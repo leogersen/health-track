@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    width: 375px;
+    height: 812px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.percent {
+    position: relative;
+    transform: scale(1.4) translateY(50px);
+}
+.percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 63) /100);
+    stroke: #03a9f4;
+}
+
+
+.percent .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.percent h1 {
+    font-weight: bold;
+    font-size: 1.5rem
+}
+.percent h2 {
+    font-size: 1rem;
+}
+.percent h3 {
+    transform: translatey(18px);
+    font-size: 0.5rem;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    transform: translateY(120px);
+    position: relative;
+}
+.calendar img {
+    margin-inline: 1rem;
+    max-width: 35px;
+}
+.left {
+    cursor: pointer;
+    max-height: 20px;
+}
+.right {
+    cursor: pointer;
+    max-height: 20px;
+    transform: rotate(180deg);
+}
+.date {
+    position: absolute;
+    bottom: -30px;
+    right: 3.4rem;
+    font-size: 0.8rem;
+}
+.ring {
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    max-width: 20px;
+}
+.back {
+    cursor: pointer;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    max-width: 20px;
+}
+.macro {
+    border-top: 1px solid #b9b9b9;
+    min-height: 6rem;
+    margin-top: 50%;
+}
+.macro-next {
+    border-top: 1px solid #b9b9b9;
+    min-height: 6rem;
+    margin-top: 1rem;
+
+}
+.wrapper {
+    height: 100%;
+}
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.middle-btn img{
+    cursor: pointer;
+    max-width: 80px;
+    margin-top: -30px;
+}
+.menu-btn {
+    cursor: pointer;
+    max-width: 25px;
+}
+
+.food-icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-box > span {
+    font-size: 0.8rem;
+}
+.circle-info {
+    background: #8b86ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 0.8rem;
+    height: 40px;
+    width: 40px;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-box > span {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+}
